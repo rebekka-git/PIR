@@ -47,9 +47,29 @@ S1 = A[0 :301];
 
 
 "scenario 1:"
-Scenario1 = np.zeros([301]);
+Scenario_1 = np.zeros([301]);
+Scenario_2 = np.zeros([301]);
+Scenario_3 = np.zeros([301]);
+Scenario_4 = np.zeros([301]);
+Scenario_5 = np.zeros([301]);
+Scenario_6 = np.zeros([301]);
+Scenario_7 = np.zeros([301]);
+Scenario_8 = np.zeros([301]);
+Scenario_9 = np.zeros([301]);
 
-#for j in range(9):
-for i in range(100):
-      Scenario1 = np.column_stack((Scenario1, A[9*301*i : 9*301*i + 301])) 
+Scenarios = {Scenario_1, Scenario_2, Scenario_3, Scenario_4, Scenario_5, Scenario_6, Scenario_7, Scenario_8, Scenario_9};
+
+k = 0;
+for j in range(9):
+    k += 1;
+    for i in range(10):
+          Scenarios['Scenario_ + str(j)'] = np.column_stack((Scenarios['Scenario_ + str(j)'], A[9*k*301*i : 9*k*301*i + 301]));
+          
+          
+          
+          
+          
+          
+          
+          
                                          
